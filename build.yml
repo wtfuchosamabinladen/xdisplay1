@@ -14,13 +14,20 @@ jobs:
           java-version: '17'
           distribution: 'temurin'
 
-      - name: Grant permission
-        run: chmod +x gradlew
+      - name: Install Gradle 7.6
+        run: |
+          wget https://services.gradle.org/distributions/gradle-7.6-bin.zip
+          unzip gradle-7.6-bin.zip
+          export PATH=$PWD/gradle-7.6/bin:$PATH
+          gradle -v
 
       - name: Build APK
-        run: ./gradlew assembleDebug
+        run: |
+          export PATH=$PWD/gradle-7.6/bin:$PATH
+          cd Android
+          gradle assembleDebug
 
       - uses: actions/upload-artifact@v4
         with:
           name: XDisplay-APK
-          path: app/build/outputs/apk/debug/app-debug.apk
+          path: Android/app/build/outputs/apk/debug/app-debug.apk
