@@ -1,8 +1,11 @@
 name: Build APK
+
 on: [push]
+
 jobs:
   build:
     runs-on: ubuntu-latest
+
     steps:
       - uses: actions/checkout@v4
 
@@ -11,22 +14,13 @@ jobs:
           java-version: '17'
           distribution: 'temurin'
 
-      - name: Install Android SDK
-        run: |
-          sudo apt-get install -y wget unzip
-          wget -q https://dl.google.com/android/repository/commandlinetools-linux-9477386_latest.zip
-          unzip -q commandlinetools-linux-9477386_latest.zip -d cmdline-tools
-          mkdir -p $HOME/android-sdk/cmdline-tools
-          mv cmdline-tools/cmdline-tools $HOME/android-sdk/cmdline-tools/latest
-          yes | $HOME/android-sdk/cmdline-tools/latest/bin/sdkmanager --sdk_root=$HOME/android-sdk "platforms;android-33" "build-tools;33.0.2"
+      - name: Grant permission
+        run: chmod +x gradlew
 
       - name: Build APK
-        run: |
-          export ANDROID_HOME=$HOME/android-sdk
-          cd Android
-          gradle assembleDebug
+        run: ./gradlew assembleDebug
 
       - uses: actions/upload-artifact@v4
         with:
           name: XDisplay-APK
-          path: Android/app/build/outputs/apk/debug/app-debug.apk
+          path: app/build/outputs/apk/debug/app-debug.apk
