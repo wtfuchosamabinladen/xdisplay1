@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "m9RyjduXCIg=",
+  "success": true,
+  "projectFilePath": "d:\\Users\\mypc\\Downloads\\XDisplay\\Windows\\XDisplay.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\mypc\\.nuget\\packages\\microsoft.netframework.referenceassemblies\\1.0.3\\microsoft.netframework.referenceassemblies.1.0.3.nupkg.sha512",
+    "C:\\Users\\mypc\\.nuget\\packages\\microsoft.netframework.referenceassemblies.net48\\1.0.3\\microsoft.netframework.referenceassemblies.net48.1.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

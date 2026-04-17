@@ -1,0 +1,10 @@
+d:\Users\mypc\Downloads\XDisplay\Windows\bin\Release\XDisplay.exe.config
+d:\Users\mypc\Downloads\XDisplay\Windows\bin\Release\XDisplay.exe
+d:\Users\mypc\Downloads\XDisplay\Windows\bin\Release\XDisplay.pdb
+d:\Users\mypc\Downloads\XDisplay\Windows\obj\Release\net48\XDisplay.csproj.AssemblyReference.cache
+d:\Users\mypc\Downloads\XDisplay\Windows\obj\Release\net48\XDisplay.GeneratedMSBuildEditorConfig.editorconfig
+d:\Users\mypc\Downloads\XDisplay\Windows\obj\Release\net48\XDisplay.AssemblyInfoInputs.cache
+d:\Users\mypc\Downloads\XDisplay\Windows\obj\Release\net48\XDisplay.AssemblyInfo.cs
+d:\Users\mypc\Downloads\XDisplay\Windows\obj\Release\net48\XDisplay.csproj.CoreCompileInputs.cache
+d:\Users\mypc\Downloads\XDisplay\Windows\obj\Release\net48\XDisplay.exe
+d:\Users\mypc\Downloads\XDisplay\Windows\obj\Release\net48\XDisplay.pdb

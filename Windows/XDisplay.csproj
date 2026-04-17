@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net48</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <AssemblyName>XDisplay</AssemblyName>
+    <RootNamespace>XDisplay</RootNamespace>
+    <ApplicationIcon></ApplicationIcon>
+    <Nullable>disable</Nullable>
+    <Platforms>x64;x86</Platforms>
+  </PropertyGroup>
+</Project>

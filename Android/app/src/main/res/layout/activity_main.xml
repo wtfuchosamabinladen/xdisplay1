@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="28dp"
+    android:gravity="center"
+    android:background="#1A1A2E">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="XDisplay"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="6dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Use your phone as a second screen"
+        android:textSize="14sp"
+        android:textColor="#AAAACC"
+        android:layout_marginBottom="40dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Windows PC IP Address"
+        android:textSize="13sp"
+        android:textColor="#AAAACC"
+        android:layout_marginBottom="8dp"/>
+
+    <EditText
+        android:id="@+id/ip_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="e.g.  192.168.1.100"
+        android:inputType="textUri"
+        android:textSize="18sp"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#666688"
+        android:background="#2A2A4A"
+        android:padding="14dp"
+        android:layout_marginBottom="20dp"/>
+
+    <Button
+        android:id="@+id/wifi_btn"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:text="📶  Connect via WiFi"
+        android:textSize="16sp"
+        android:textColor="#FFFFFF"
+        android:background="#2860C8"
+        android:layout_marginBottom="12dp"/>
+
+    <Button
+        android:id="@+id/usb_btn"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:text="🔌  Connect via USB"
+        android:textSize="16sp"
+        android:textColor="#FFFFFF"
+        android:background="#28A860"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="USB: run 'Setup USB' in the Windows app first, then tap above."
+        android:textSize="11sp"
+        android:textColor="#667788"
+        android:gravity="center"
+        android:layout_marginTop="24dp"/>
+
+</LinearLayout>
